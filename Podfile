@@ -7,5 +7,6 @@ target 'view-code-examples' do
 
   # Pods for view-code-examples
 	pod 'SnapKit', '~> 5.0.0'
+  pod 'ChameleonFramework/Swift', :git => 'https://github.com/wowansm/Chameleon.git', :branch => 'swift5'
 
 end
