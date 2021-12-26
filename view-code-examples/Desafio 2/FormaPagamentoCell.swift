@@ -63,6 +63,7 @@ extension FormaPagamentoCell: ViewCodeProtocol {
             make.left.equalTo(self).offset(20)
             make.right.equalTo(self).inset(20)
             make.height.equalTo(60)
+            make.top.bottom.equalTo(self).inset(5)
         }
         
         iconCartaoImageView.snp.makeConstraints { make in

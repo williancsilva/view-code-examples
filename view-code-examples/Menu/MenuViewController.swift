@@ -48,8 +48,10 @@ class MenuViewController: UIViewController {
     @IBAction func abrirDesafio2(_ sender: UIButton) {
         
         let vc = Desafio2ViewController()
-        vc.modalPresentationStyle = .overCurrentContext
-        self.present(vc, animated: true, completion: {})
+//        vc.modalPresentationStyle = .overCurrentContext
+//        self.present(vc, animated: true, completion: {})
+        
+        navigationController?.pushViewController(vc, animated: true)
     }
 }
 

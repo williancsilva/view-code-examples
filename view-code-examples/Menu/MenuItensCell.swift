@@ -31,7 +31,7 @@ class MenuItensCell: UITableViewCell {
     private lazy var triangleMenuItemView: UIView = {
         let view = UIView()
         
-        view.backgroundColor = .white
+        view.backgroundColor = .systemBackground
 
         let triangle = CAShapeLayer()
         triangle.fillColor = UIColor(hex: "4DB6AC").cgColor

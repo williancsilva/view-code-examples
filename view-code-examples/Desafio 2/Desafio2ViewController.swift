@@ -89,6 +89,7 @@ extension Desafio2ViewController: UITableViewDelegate, UITableViewDataSource {
         let tituloFormaPagamento = listaFormaPagamento[indexPath.row]
         
         cell.descricaoCartaoLabel.text = tituloFormaPagamento
+        cell.selectionStyle = .none
 
         return cell
     }
@@ -138,6 +139,15 @@ extension Desafio2ViewController: ViewCodeProtocol {
         listaCartaoTableView.separatorStyle = .none
         listaFormaPagamento = fetchData()
         
+        let backButton = UIBarButtonItem()
+        backButton.title = ""
+        backButton.tintColor = UIColor(hex: "F95F62")
+        self.navigationController?.navigationBar.topItem?.backBarButtonItem = backButton
+        
+    }
+    
+    @objc func goBack() {
+        navigationController?.popToRootViewController(animated: true)
     }
 }
 
